@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Montserrat&family=Space+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #FFF;
+}
+.error{
+    margin:40px 65px;
+    color: #333;
+    font-family: 'Inconsolata',monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:normal;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto 86px;
+}
+
+.image{
+    max-width: 539.22px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    height: 60%;
+    width: 600px;
+}
+
+.alert,.description,.home {
+    font-family: 'Space Mono',monospace;
+}
+.alert{
+    color: var(--gray-1, #333);
+    font-size: 64px;
+    max-width: 768px;
+    font-weight: 700;
+    letter-spacing: -2.24px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.description{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+    color: var(--gray-2, #4F4F4F);
+    width: 70%;
+    height: auto;
+}
+.home{
+    background: var(--gray-1, #333);
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.49px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 175px;
+}
+.owner{
+    margin: 14px;
+    text-align:center;
+    color: #BDBDBD;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+#username{
+    font-weight: 700;
+}
+
+@media screen and (max-width:1140px) {
+    .error{
+        align-self: flex-start;
+        margin: 10px 20px;
+    }
+    .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: unset;
+        margin: 0 auto;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        margin: 0, auto;
+        width: 286.83px;
+        height: 238px;
+        flex-shrink: 0;
+    }
+    img{
+        object-fit: cover;
+    }
+    .content{
+        width: 80%;
+        gap: 5pxpx;
+    }
+    .alert{
+        font-size: 48px;
+        letter-spacing: -1.68px;
+    }
+    .description{
+        font-size: 18px;
+        letter-spacing: -0.63px;
+        width: 80%;
+    }
+}
